@@ -23,10 +23,10 @@ class FsmBot(StatesGroup):
 
 
 API_TOKEN = os.getenv('TOKEN')
-admins = os.getenv("ADMINS")
+admins = [304128276, 886880023, 30825880]
 storage = MemoryStorage()
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token=str(API_TOKEN))
+bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot, storage=storage)
 chat_support_id = -1001749197487
 
