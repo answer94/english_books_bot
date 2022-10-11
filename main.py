@@ -26,7 +26,7 @@ API_TOKEN = os.getenv('TOKEN')
 admins = os.getenv("ADMINS")
 storage = MemoryStorage()
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token=API_TOKEN)
+bot = Bot(token=str(API_TOKEN))
 dp = Dispatcher(bot, storage=storage)
 chat_support_id = -1001749197487
 
