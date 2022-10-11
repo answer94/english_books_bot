@@ -21,8 +21,8 @@ class FsmBot(StatesGroup):
     state2 = State()
     state3 = State()
 
-
-API_TOKEN = TOKEN
+ 
+API_TOKEN = os.getenv("API_TOKEN")
 admins = [304128276, 886880023, 30825880]
 storage = MemoryStorage()
 logging.basicConfig(level=logging.INFO)
